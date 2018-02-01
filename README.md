@@ -48,9 +48,9 @@ Include these jar files while creating the project.
 7. RabbitMqTopicDemo
 8. TimeOutDemo
 
-Description:
-RabbitMqBasicQueue :- It gives the basic idea of messaging functionality of rabbitMq 
-for running there are 2 ways:
+Basic Description for execution:-
+
+There are 2 ways:
 1. Through Command Prompt:- use runnable jar of both java files by exporting it as runnable jar
 command java -jar <filename.jar> <arguments>
 2. Through sts :- By clicking on runnning configuration and pass the arguments (messages) and run it.
