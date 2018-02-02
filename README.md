@@ -1,3 +1,4 @@
+
 # RabbitMqWorkspace
 
 # Procedure for setting up RabbitMq:
@@ -11,7 +12,8 @@
              System variable setting:
              Variable: Path
              Variable Value: C:\Program Files\erl9.2\bin
-   (Ensure that these files are there at specified address if not modify these addresses according to file location)
+             (Ensure that these files are there at specified address if not modify these addresses according to file location)
+
 
 3> install rabbitmq-server-3.7.3.exe 
     a. For windows :- https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.3/rabbitmq-server-3.7.3.exe
@@ -24,7 +26,7 @@
              System variable setting:
              Variable: Path
              Variable Value: %RABBITMQ_SERVER%\sbin
-    (Ensure that these files are there at specified address if not modify these addresses according to file location)
+             (Ensure that these files are there at specified address if not modify these addresses according to file location)
 
 
 
