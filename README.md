@@ -4,6 +4,7 @@
 # Procedure for setting up RabbitMq:
 
 1> install otp_win64_20.2.exe :- http://www.erlang.org/download/otp_win64_20.2.exe
+
 2> Set environment varible and system path for Erlang 
              User variable setting : 
              Variable Name: ERLANG_HOME
@@ -16,8 +17,11 @@
 
 
 3> install rabbitmq-server-3.7.3.exe 
+
     a. For windows :- https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.3/rabbitmq-server-3.7.3.exe
+    
     b. For Ubuntu :- https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.3/rabbitmq-server_3.7.3-1_all.deb
+    
 4> Set environment varible and system path for Rabbitmq  server.
              User variable setting : 
              Variable Name: RABBITMQ_SERVER
