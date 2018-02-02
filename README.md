@@ -40,7 +40,9 @@
 Include these jar files while creating the project.
 
 1.RabbitMq Java Client (http://central.maven.org/maven2/com/rabbitmq/amqp-client/4.0.2/amqp-client-4.0.2.jar)
+
 2.SLF4J API (http://central.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar)
+
 3.SLF4J Simple (http://central.maven.org/maven2/org/slf4j/slf4j-simple/1.7.22/slf4j-simple-1.7.22.jar)
 
 
