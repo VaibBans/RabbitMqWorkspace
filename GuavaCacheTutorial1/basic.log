@@ -1,0 +1,4 @@
+2018-03-21-main-INFO -com.cg.guava.bean.EmployeeTester:Values are addednull
+2018-03-21-main-INFO -com.cg.guava.bean.EmployeeTester:Values are addedEmployeeBean{Name=Dell, department=Hardware, Emp Id=101}
+2018-03-21-main-INFO -com.cg.guava.bean.EmployeeTester:Values are addedEmployeeBean{Name=Sam, department=IT, Emp Id=102}
+2018-03-21-main-INFO -com.cg.guava.bean.EmployeeTester:Values are addedEmployeeBean{Name=Sammy, department=Finance, Emp Id=104}

@@ -1,0 +1,20 @@
+server:
+  port: 1111
+  context-path: /rabbit
+
+
+spring:
+  rabbitmq:
+    host: 172.17.0.2
+    port: 5672
+    username: user
+    password: book  
+    listener.acknowledge-mode: auto
+    order.consumer.no:
+      start: 1
+      max: 3  
+    error:
+      max.retry.attempts: 2
+      message.ttl: 60000
+      notification.dl: justin.mathew@capgemini.com     
+    

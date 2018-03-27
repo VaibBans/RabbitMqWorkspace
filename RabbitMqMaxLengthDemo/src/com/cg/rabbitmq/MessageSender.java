@@ -20,7 +20,7 @@ public class MessageSender {
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
 		Map<String, Object> argus = new HashMap<String,Object>();	
-		argus.put("x-max-length", 4);
+		argus.put("x-max-length", 1);
 		channel.queueDeclare(MAX_LENGTH,false,false,false,argus);
 		System.out.println("Please enter your message");
 		String message = sc.nextLine();

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<form action = "#" th:action="@{/send}" th:object="${user}" method="post">
+<table>
+<tr>
+<td>Enter message</td>
+<td><input type = "text" th:field = "*{message}" required="required"/></td>
+</tr>
+
+<tr>
+<td><input type="submit" id = "submit" value = "Send"/></td>
+</tr>
+</table>
+<div th:if="${message}!=null">
+Message Sent Successfully
+<a th:href = "@{/Message}">Again want to send</a>
+<a th:href = "@{/Received}">Want to receive</a>
+</div>
+
+</form>
+</body>
+</html>

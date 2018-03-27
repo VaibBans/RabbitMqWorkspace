@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<form action = "#" th:action = "rec" method = "post">
+<table>
+<tr>
+<td><input type = "submit" value = "Receive"/></td>
+</tr>
+</table>
+</form>
+<div th:if = "${bool}==true">
+Message Received Successfully
+</div>
+
+<div th:if = "${bool}==false">
+Message Not able to Receive. Message is dead lettered
+</div>
+</body>
+</html>

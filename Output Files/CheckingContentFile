@@ -1,0 +1,14 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/navina/Desktop/Vaibhav/CheckingContentOfMessage/slf4j-simple-1.7.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/navina/Desktop/Vaibhav/CheckingContentOfMessage/slf4j.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO com.cg.rabbitmq.Sender - Waiting for the message
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender -  [x] Received 'bsb'
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender - Message receiving through: checkex1
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender -  [x] Received 'hi'
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender - Message receiving through: checkex1
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender -  [x] Received 'hi'
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender - Message receiving through: checkex1
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender -  [x] Received 'Hello'
+[pool-1-thread-3] INFO com.cg.rabbitmq.Sender - Message receiving through: checkex1

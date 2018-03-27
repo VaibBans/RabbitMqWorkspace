@@ -40,7 +40,7 @@ public class RPCClient {
             .build();
 
     channel.basicPublish("", requestQueueName, props, message.getBytes("UTF-8"));
-
+    
     final BlockingQueue<String> response = new ArrayBlockingQueue<String>(1);
 
     channel.basicConsume(replyQueueName, true, new DefaultConsumer(channel) {

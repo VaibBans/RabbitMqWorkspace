@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+Welcome!! you are on success page
+<form action = "#" th:action="@{/sendMsg}" th:object = "${userLogin}" method="post">
+<table>
+<tr>
+<td>Enter User Name </td>
+<td><input type="text" th:field="*{userName}"/></td>
+</tr>
+<tr>
+<td>Enter password </td>
+<td><input type="text" th:field="*{password}"/></td>
+</tr>
+<tr>
+<td>Enter message </td>
+<td><input type="text" th:field="*{message}"/></td>
+</tr>
+<tr>
+<td><input type = "submit" id = "submit" value = "Send Message"/></td>
+</tr> 
+</table>
+</form>
+</body>
+</html>

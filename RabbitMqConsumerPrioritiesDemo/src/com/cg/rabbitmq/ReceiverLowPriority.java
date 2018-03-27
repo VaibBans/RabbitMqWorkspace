@@ -20,9 +20,11 @@ public class ReceiverLowPriority {
 		factory.setHost("localhost");
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
+		
 		channel.queueDeclare(PRIORITY_CONSUMER, false, false, false, null);
 		channel.exchangeDeclare(EXCHANGE_NAME, "direct",true);
 		channel.queueBind(PRIORITY_CONSUMER,EXCHANGE_NAME,"");
+		
 		System.out.println("Waiting for the message");
 		QueueingConsumer consumer = new QueueingConsumer(channel);
 		Map<String, Object> arguments = new HashMap<String, Object>();
@@ -32,6 +34,7 @@ public class ReceiverLowPriority {
 		while (true) {
 			QueueingConsumer.Delivery delivery = consumer.nextDelivery();
 			String message = new String(delivery.getBody());
+			System.out.println("In low priority consumer");
 			System.out.println("Received '" + message + "'");
 			channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
 		}

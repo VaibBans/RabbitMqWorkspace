@@ -15,7 +15,7 @@ public class Producer {
 	public static void main(String[] args) throws Exception{
 		Scanner sc = new Scanner(System.in);
 		ConnectionFactory factory = new ConnectionFactory();
-		factory.setHost("localhost");
+		factory.setHost("172.17.0.3");
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();			
 		Map<String, Object> arguments = new HashMap<String,Object>();
@@ -31,5 +31,4 @@ public class Producer {
 			sc.close();
 		}
 	}
-
 }

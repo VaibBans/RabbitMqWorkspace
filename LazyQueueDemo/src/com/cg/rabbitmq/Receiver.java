@@ -13,11 +13,11 @@ import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.Envelope;
 
 public class Receiver {
-	private final static String LAZY_QUEUE = "lazy_logs";
+	private final static String LAZY_QUEUE = "lazy_logs1";
 
 	public static void main(String[] args) throws Exception{
 		ConnectionFactory factory = new ConnectionFactory();
-		factory.setHost("localhost");
+		factory.setHost("172.17.0.3");
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();			
 		Map<String, Object> arguments = new HashMap<String,Object>();

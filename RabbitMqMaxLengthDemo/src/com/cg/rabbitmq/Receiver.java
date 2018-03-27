@@ -22,7 +22,7 @@ public class Receiver {
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
 		Map<String, Object> argus = new HashMap<String,Object>();	
-		argus.put("x-max-length", 4);
+		argus.put("x-max-length", 1);
 	    channel.queueDeclare(MAX_LENGTH, false, false, false, argus);
 	    System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
